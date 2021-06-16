@@ -1,4 +1,3 @@
-//global constants
 const api = {
   key: '5f9cc9dcf6212493484c',
   baseUrl: 'https://free.currconv.com'
@@ -20,6 +19,35 @@ const result4 = document.querySelector('#result4');
 
 const currencyAmount = document.querySelector('#currency-input');
 currencyAmount.addEventListener('keypress', setQuery);
+currencyTo1.addEventListener('change', setFlag);
+currencyTo2.addEventListener('change', setFlag2);
+currencyTo3.addEventListener('change', setFlag3);
+currencyTo4.addEventListener('change', setFlag4);
+
+function setFlag() {
+  document.getElementById("flag1").src = `https://www.countryflags.io/${currencyTo1.value.slice(0, -1)}/flat/64.png`;
+  fetchData1(currencyAmount.value);
+  result1.innerText = `${(Object.values(data)*currencyAmount.value).toFixed(2)}`
+}
+
+function setFlag2() {
+  document.getElementById("flag2").src = `https://www.countryflags.io/${currencyTo2.value.slice(0, -1)}/flat/64.png`;
+  fetchData2(currencyAmount.value);
+  result2.innerText = `${(Object.values(data2)*currencyAmount.value).toFixed(2)}`
+}
+
+function setFlag3() {
+  document.getElementById("flag3").src = `https://www.countryflags.io/${currencyTo3.value.slice(0, -1)}/flat/64.png`;
+  fetchData3(currencyAmount.value);
+  result3.innerText = `${(Object.values(data3)*currencyAmount.value).toFixed(2)}`
+}
+
+function setFlag4() {
+  document.getElementById("flag4").src = `https://www.countryflags.io/${currencyTo4.value.slice(0, -1)}/flat/64.png`;
+  fetchData4(currencyAmount.value);
+  result4.innerText = `${(Object.values(data4)*currencyAmount.value).toFixed(2)}`
+}
+
 
 function setQuery(evt) {
   if (evt.keyCode == 13) {
@@ -61,20 +89,16 @@ function fetchData4() {
 
 function displayResult1 (data) {
   result1.innerText = `${(Object.values(data)*currencyAmount.value).toFixed(2)}`
-  document.getElementById("flag1").src = `https://www.countryflags.io/${currencyTo1.value.slice(0, -1)}/flat/64.png`;
 }
 
 function displayResult2 (data2) {
   result2.innerText = `${(Object.values(data2)*currencyAmount.value).toFixed(2)}`
-  document.getElementById("flag2").src = `https://www.countryflags.io/${currencyTo2.value.slice(0, -1)}/flat/64.png`;
 }
 
 function displayResult3 (data3) {
   result3.innerText = `${(Object.values(data3)*currencyAmount.value).toFixed(2)}`
-  document.getElementById("flag3").src = `https://www.countryflags.io/${currencyTo3.value.slice(0, -1)}/flat/64.png`;
 }
 
 function displayResult4 (data4) {
   result4.innerText = `${(Object.values(data4)*currencyAmount.value).toFixed(2)}`
-  document.getElementById("flag4").src = `https://www.countryflags.io/${currencyTo4.value.slice(0, -1)}/flat/64.png`;
 }
