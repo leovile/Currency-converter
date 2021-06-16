@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height:100%;
+  font-family: 'Patua One', cursive;
+  background-color: rgb(24, 23, 23);
+}
+
+h1, p, input, select{
+  color: #6391FF;
+}
+
+select option {
+  color: #6391FF;
+  background-color: white;
+}
+
+input[type="number"], textarea {
+  background-color: #6391FF;
+}
+
+p {
+  font-size: 200%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+.flexbox-container select {
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.input-1 {
+  display: flex;
+}
+
+.flexbox-container {
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 50%;
+}
+
+.flexbox-container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6391FF;
+}
+
+#currency-input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+  border-bottom: 3px solid #333;
+  width: 100%;
+
+}
+#currency-input:focus {
+  outline:none;
+}
+
+
+
+.flexbox-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.flexbox-item {
+  width: 100%;
+  height: 17.5%;
+  margin: 10px;
+}
+
+.flexbox-item select {
+  font-family: 'Patua One', cursive;
+  font-size: 24px;
+}
+
+.flexbox-item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+}
+
+.flexbox-item-1 select {
+  background-color: #6391FF;
+  color: white;
+  border-bottom: 3px solid #333;
+}
+
+.flexbox-item-2 {
+  flex-grow: 1;
+  border: 1px solid rgb(104, 104, 104);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexbox-item-3 {
+  flex-grow: 1;
+  border: 1px solid rgb(104, 104, 104);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexbox-item-4 {
+  flex-grow: 1;
+  border: 1px solid rgb(104, 104, 104);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexbox-item-5 {
+  flex-grow: 1;
+  border: 1px solid rgb(104, 104, 104);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flag {
+  margin-left: 5px;
+}
+
+@media (max-width: 800px) and (min-height: 500px) {
+  .flexbox-container {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .flexbox-item-1 {
+    height: 300px;
+  }
+}
