@@ -128,33 +128,61 @@ input[type=number] {
 .flexbox-item-2 {
   flex-grow: 1;
   border: 1px solid rgb(104, 104, 104);
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.flexbox-item-2:hover {
+  box-shadow: 3px 3px 3px #333;
+  transition: 0.2s;
 }
 
 .flexbox-item-3 {
   flex-grow: 1;
   border: 1px solid rgb(104, 104, 104);
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.flexbox-item-3:hover {
+  box-shadow: 3px 3px 3px #333;
+  transition: 0.2s;
 }
 
 .flexbox-item-4 {
   flex-grow: 1;
   border: 1px solid rgb(104, 104, 104);
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.flexbox-item-4:hover {
+  box-shadow: 3px 3px 3px #333;
+  transition: 0.2s;
+}
+
 .flexbox-item-5 {
   flex-grow: 1;
   border: 1px solid rgb(104, 104, 104);
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.flexbox-item-5:hover {
+  box-shadow: 3px 3px 3px #333;
+  transition: 0.2s;
 }
 
 .flag {
