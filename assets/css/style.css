@@ -133,6 +133,7 @@ input[type=number] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #DDDDDD;
 }
 
 .flexbox-item-2:hover {
@@ -148,6 +149,7 @@ input[type=number] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #DDDDDD;
 }
 
 .flexbox-item-3:hover {
@@ -163,6 +165,7 @@ input[type=number] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #DDDDDD;
 }
 
 .flexbox-item-4:hover {
@@ -178,6 +181,7 @@ input[type=number] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color:#DDDDDD;
 }
 
 .flexbox-item-5:hover {
